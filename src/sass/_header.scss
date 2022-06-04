@@ -25,7 +25,7 @@
 }
 
 .header__menu {
-  gap: 30px;
+  gap: 32px;
 }
 
 .header__container {
@@ -47,6 +47,11 @@
   font-size: 18px;
   line-height: 1.22;
   color: $color-black;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
 }
 
 .header__cta {
