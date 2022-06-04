@@ -15,7 +15,12 @@
 }
 
 .header__nav {
+  display: none;
   align-items: center;
+
+  @include tablet-bg {
+    display: block;
+  }
 }
 
 .header__menu {
