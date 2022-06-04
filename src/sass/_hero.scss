@@ -1,2 +1,8 @@
-@import './utils/common';
-@import './utils/variables';
+.hero__blocks {
+  display: flex;
+}
+
+.hero__block {
+  flex-basis: 50%;
+  border: 1px solid black;
+}
