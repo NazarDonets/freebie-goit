@@ -1,6 +1,4 @@
 // GLOBAL RESET //
-
-body,
 h1,
 h2,
 h3,
@@ -9,9 +7,19 @@ h5,
 h6,
 p,
 ul,
-ol {
+ol,
+li,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
 }
 
 // BREAKPOINTS

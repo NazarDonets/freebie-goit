@@ -1,2 +1,6 @@
 @import './utils/common';
 @import './utils/variables';
+
+.header__logo {
+  font-family: $main-font;
+}
