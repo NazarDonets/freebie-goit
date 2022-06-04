@@ -1,8 +1,66 @@
 .hero__blocks {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .hero__block {
-  flex-basis: 50%;
-  border: 1px solid black;
+  flex-basis: 100%;
+  background-color: $color-header-section-gray;
+
+  @include tablet-bg {
+    flex-basis: 50%;
+  }
+}
+
+.hero__block-container {
+  @include tablet-bg {
+    padding-top: 80px;
+    padding-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 310px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include desktop {
+    padding-top: 154px;
+    padding-bottom: 135px;
+    max-width: 433px;
+  }
+}
+
+.hero__title {
+  font-size: 36px;
+
+  @include desktop {
+    font-size: 56px;
+    line-height: 1.23;
+  }
+}
+
+.hero__subtitle {
+  margin-top: 36px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.hero__cta-btn {
+  display: block;
+  width: fit-content;
+  margin-top: 52px;
+  padding: 23px 28px;
+  border-radius: 5px;
+  color: white;
+  background-color: $color-accent;
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
+}
+
+.hero__block--2 {
+  background-image: url('./../images/hero-img1@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

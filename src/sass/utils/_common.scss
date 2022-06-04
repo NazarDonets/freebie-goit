@@ -45,7 +45,6 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 450px;
   max-width: 450px;
 
   @include tablet-bg {
@@ -54,7 +53,9 @@ body {
   }
 
   @include desktop {
-    width: 1200px;
-    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 1400px;
+    max-width: 1400px;
   }
 }
