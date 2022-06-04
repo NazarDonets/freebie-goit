@@ -101,10 +101,10 @@
     background-position: center;
     background-size: cover;
     @include x1 {
-      background-image: url('./images/hero-img1@1x.jpg');
+      background-image: url('./../../images/hero-img1@1x.jpg');
     }
     @include x2 {
-      background-image: url('./images/hero-img1@2x.jpg');
+      background-image: url('./../../images/hero-img1@2x.jpg');
     }
   }
 }
@@ -117,10 +117,10 @@
     background-position: center;
     background-size: cover;
     @include x1 {
-      background-image: url('./images/hero-img2@1x.jpg');
+      background-image: url('./../../images/hero-img2@1x.jpg');
     }
     @include x2 {
-      background-image: url('./images/hero-img2@2x.jpg');
+      background-image: url('./../../images/hero-img2@2x.jpg');
     }
   }
 }
