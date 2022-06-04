@@ -1,3 +1,11 @@
+.hero {
+  padding-top: 20px;
+
+  @include tablet-bg {
+    padding-top: 0;
+  }
+}
+
 .hero__blocks {
   display: flex;
   flex-wrap: wrap;
