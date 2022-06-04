@@ -1,2 +1,58 @@
 @import './utils/common';
 @import './utils/variables';
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 116px;
+  background-color: #fafafa;
+}
+
+.header__container,
+.header__nav,
+.header__menu {
+  display: flex;
+}
+
+.header__nav {
+  display: none;
+  align-items: center;
+
+  @include tablet-bg {
+    display: block;
+  }
+}
+
+.header__menu {
+  gap: 30px;
+}
+
+.header__container {
+  justify-content: space-between;
+}
+
+.header__logo {
+  align-self: center;
+}
+
+.logo__icon {
+  width: 41px;
+  height: 39px;
+}
+
+.header__menu-link {
+  font-size: 18px;
+  line-height: 1.22;
+  color: $color-black;
+}
+
+.header__cta {
+  border: 1px solid $color-accent;
+  border-radius: 5px;
+  padding: 14px 24px;
+
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
+  color: $color-accent;
+}
