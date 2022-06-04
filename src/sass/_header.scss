@@ -19,7 +19,7 @@
   align-items: center;
 
   @include tablet-bg {
-    display: block;
+    display: flex;
   }
 }
 
