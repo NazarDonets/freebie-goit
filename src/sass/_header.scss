@@ -25,7 +25,9 @@
 }
 
 .header__container {
-  justify-content: space-between;
+  @include tablet-bg {
+    justify-content: space-between;
+  }
 }
 
 .header__logo {
