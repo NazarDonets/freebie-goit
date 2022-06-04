@@ -1,6 +1,11 @@
 .hero__blocks {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
+
+  @include tablet-bg {
+    gap: 0;
+  }
 }
 
 .hero__block {
@@ -13,6 +18,8 @@
 }
 
 .hero__block-container {
+  padding: 15px;
+
   @include tablet-bg {
     padding-top: 80px;
     padding-bottom: 70px;
@@ -26,7 +33,7 @@
   @include desktop {
     padding-top: 154px;
     padding-bottom: 135px;
-    max-width: 433px;
+    max-width: 422px;
   }
 }
 
@@ -40,27 +47,80 @@
 }
 
 .hero__subtitle {
-  margin-top: 36px;
-  font-size: 20px;
+  margin-top: 16px;
+  font-size: 16px;
   line-height: 1.4;
+
+  @include desktop {
+    margin-top: 36px;
+    font-size: 20px;
+  }
 }
 
 .hero__cta-btn {
-  display: block;
-  width: fit-content;
-  margin-top: 52px;
-  padding: 23px 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  width: 150px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 5px;
   color: white;
   background-color: $color-accent;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.22;
   text-transform: uppercase;
+
+  &--transparent {
+    background-color: transparent;
+    color: $color-accent;
+    border: 1px solid $color-accent;
+  }
+
+  @include tablet-bg {
+    margin-left: unset;
+    margin-right: unset;
+  }
+
+  @include desktop {
+    margin-top: 52px;
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+  }
 }
 
 .hero__block--2 {
-  background-image: url('./../images/hero-img1@1x.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  display: none;
+
+  @include tablet-bg {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include x1 {
+      background-image: url('./../images/hero-img1@1x.jpg');
+    }
+    @include x2 {
+      background-image: url('./../images/hero-img1@2x.jpg');
+    }
+  }
+}
+.hero__block--3 {
+  display: none;
+
+  @include tablet-bg {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include x1 {
+      background-image: url('./../images/hero-img2@1x.jpg');
+    }
+    @include x2 {
+      background-image: url('./../images/hero-img2@2x.jpg');
+    }
+  }
 }
