@@ -1,6 +1,31 @@
 .section{
-    margin-top: 96px;
-    margin-bottom: 136px;
+    max-width: 1600px;
+    margin-top: 60px;
+    margin-bottom: 96px;
+
+    @media screen and (min-width:1200px) {
+        margin-top: 96px;
+        margin-bottom: 136px;
+    }
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 450px;
+
+    @media screen and (min-width:768px) {
+        width: 738px;
+        max-width: 738px;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 1400px;
+        max-width: 1400px;
+    }
 }
 .section__title{
     font-size: 32px;
@@ -14,24 +39,88 @@
 }
 .card-set{
     margin-top: 64px;
-    // display: flex;
+    justify-content: center;
+        
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        
+    }
+    @media screen and (min-width:1200px) {
+        flex-wrap: nowrap;
+    }
 }
 .card-set__item{
+    height: 100%;
+    text-decoration: none;
+    margin-bottom: 30px;
+    background-color:#fff;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 0px 0px 4px 4px;
+    
+    @media screen and (min-width:768px) {
+      margin-bottom: 0;
+    }
+
+
+    
+}
+
+.card-set__text{
+    padding: 24px;
+   
+}
+.card-set__title{
+    margin-bottom: 74px;
+    font-size: 20px;
+   
+}
+
+.card-set__send{
+    color: #000;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+// work-block
+.work{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #f7941e;
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        justify-content: center;
+    }
 
 }
-.work-block{
-    background-color: #f7941e;
-}
+
 .work-block__title{
-    font-size: 32px;
-    line-height: 1.4;
+    font-size: 28px;
+    line-height: 1.2;
     text-align: center;
+
+    @media screen and (min-width:1200px) {
+        font-size: 32px;
+        line-height: 1.4;
+    }
    
 }
 
 .work-block__subtitle{
     font-size: 18px;
     text-align: center;
+}
+
+.work-block__button{
+    @media screen and (min-width:768px) {
+        display: flex;
+        
+    }
+    @media screen and (min-width:1200px) {
+        margin-left: 208px;
+    }
 }
 
 .work-block__btn{
@@ -49,7 +138,25 @@
     font-size: 14px;
     line-height: 1.22;
     display: flex;
+
+    @media screen and (min-width:1200px) {
+        width: 200px;
+        margin-left: 16px;
+    }
+
+
+}
+.work-block__btn:hover,
+.work-block__btn:focus{
+background-color:#000;
+color: #f7941e;
 }
 .work-block__btn--current{
     background-color: #000;
+    color: #fff;
+}
+.work-block__btn--current:hover,
+.work-block__btn--current:focus{
+    background-color: #fff;
+    color: #000;
 }
